@@ -1,7 +1,8 @@
 name: Github Action Demo
 on: [push]
 job: 
-  Explore-Github-Actions:
+  Test:
     runs-on: macos-latest
     steps:
       - run: echo " The code was actually triggered by a ${{github.event_name}} event"
+      - run: python main.py
