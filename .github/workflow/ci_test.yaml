@@ -1,0 +1,7 @@
+name: Github Action Demo
+run: [push]
+job: 
+  Explore-Github-Actions:
+    runs-on: Ubuntu-latest
+    steps:
+      - run: echo " The code was actually triggered by a ${{github.event_name}} event"
