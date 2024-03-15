@@ -1,0 +1,9 @@
+name: Github Action Demo
+on: [ push]
+jobs: 
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v2
+      - run: echo "The code was actually triggered by a ${{github.event_name}} event."
+      - run: python main.py
